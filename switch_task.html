@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayValue()
+{
+var x=document.getElementById('fvalue').value;
+var result;
+
+switch(x)
+{
+case "prabhas":
+result="He is a film star";
+break;
+case "mahesh":
+result="He is a film star";
+break;
+case "ramesh":
+result="He is a faculty";
+break;
+case "chitra":
+result="she is a singer";
+break;
+default:
+result="value does not exist in our database";
+break;
+}
+document.getElementById('output').innerHTML =result;
+}
+</script>
+</head>
+<body>
+Enter The Data:<input type="text" id="fvalue"><br><br>
+<button onClick="return displayValue();">Display</button>
+<p id="output"></p>
+</body>
+</html>
