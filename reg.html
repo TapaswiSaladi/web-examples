@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="css/stylesheet.css">
+<script>
+function validate()
+{
+var r=document.regForm;
+var emailRegExp=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var phoneRegExp=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+if(r.fname.value=="")
+{
+alert("please enter your first name");
+r.fname.focus();
+return false;
+}
+if(r.lname.value=="")
+{
+alert("please enter your last name");
+r.lname.focus();
+return false;
+}
+if(r.email.value=="")
+{
+alert("please enter your email");
+r.email.focus();
+return false;
+}
+if(!emailRegExp.test(r.email.value))
+{
+alert("please enter your vaild email address");
+r.email.focus();
+return false;
+}
+if(r.phone.value=="")
+{
+alert("please enter your phone number");
+r.lname.focus();
+return false;
+}
+if(!phoneRegExp.test(r.email.value))
+{
+alert("please enter your vaild phone number");
+r.phone.focus();
+return false;
+}
+
+if(r.gen[0].checked==""&&r.gen[1].checked=="")
+{
+alert("please select your gender");
+return false;
+}
+if(r.lang[0].checked==""&&r.lang[1].checked==""&&r.lang[2].checked==""&&r.lang[3].checked=="")
+{
+alert("please select your language");
+return false;
+}
+if(r.lang[0].checked==""&&r.lang[1].checked==""&&r.lang[2].checked==""&&r.lang[3].checked=="")
+{
+alert("please select your language");
+return false;
+}
+if(r.sub.selectedIndex==0)
+{
+alert("please select your subject");
+return false;
+
+}
+if(r.user_pic.value=="")
+{
+alert("please upload your picture");
+r.user_pic.focus();
+return false;
+
+}
+if(r.address.value=="")
+{
+alert("please give your address");
+r.address.focus();
+return false;
+
+}
+
+}
+</script>
+
+</head>
+<body>
+<form name="regForm">
+<title>REGISTER</title>
+<table class="register" width="100%" cellspacing=0>
+<tr class>
+<td>First Name</td>
+<td>:</td>
+<td><input type="text" name="fname" id="fname"/></td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td>:</td>
+<td><input type="text" name="lname" id="lname"/></td>
+</tr>
+<tr>
+<td>Email</td>
+<td>:</td>
+<td><input type="text" name="email" id="email"/></td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>:</td>
+<td><input type="text" name="phone" id="phone"/></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>:</td>
+<td><input type="radio" name="gender" id="gen"/>Male
+<input type="radio" name="gender" id="gen"/>Female</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>:</td>
+<td><input type="checkbox" name="telugu" id="lang"/>Telugu
+<input type="checkbox" name="English" id="lang"/>English
+<input type="checkbox" name="Hindi" id="lang"/>Hindi
+<input type="checkbox" name="Tamil" id="lang"/>Tamil</td>
+</tr>
+<tr>
+<td>Subjects</td>
+<td>:</td>
+<td><select name="subject" id="sub">
+<option>Select your option</option>
+<option>Maths</option>
+<option>Physics</option>
+<option>Chemistry</option>
+<option>Biology</option>
+<option>Natural Science</option>
+<option>Physical Science</option>
+<option>Computers</option>
+<option>English</option>
+<option>Telugu</option></td>
+</tr>
+<td>Upload</td>
+<td>:</td>
+<td><input type="file" name="user_pic" id="user_pic"/></td>
+</tr>
+<td>Address</td>
+<td>:</td>
+<td>
+<textarea name="address" id="address"></textarea>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>:</td>
+<td><button type="submit" onClick="return validate();">Register</button>
+</td>
+</tr>
+
+</form>
+</body>
+</html>
+
