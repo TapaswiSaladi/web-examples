@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayValue()
+{
+var result;
+var day=parseInt(document.getElementById("fvalue").value);
+switch(day)
+{
+case 0:
+result="0 is Sunday";
+break;
+case 1:
+result="1 is Monday";
+break;
+case 2:
+result="2 is Tuesday";
+break;
+case 3:
+result="3 is wednesday";
+break;
+case 4:
+result="4 is Thursday";
+break;
+case 5:
+result="0 is Friday";
+break;
+case 6:
+result="6 is Saturday";
+break;
+default:
+result="Day number is not valid";
+
+}
+document.getElementById('output').innerHTML =result;
+}
+</script>
+</head>
+<body>
+Enter the Day number:<input type="text" id="fvalue"><br><br>
+<button onClick="return displayValue();">Display</button>
+<p id="output"></p>
+</body>
+</html>

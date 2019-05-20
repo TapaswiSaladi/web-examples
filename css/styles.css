@@ -1,0 +1,25 @@
+
+p{
+color:red;
+border-top:5px solid black;
+border-bottom:5px solid black;
+border-left:5px dotted black;
+border-right:5px dotted black;
+width:25%;font-size:30px;
+font-style:italic;
+background-color:green;
+margin:50px;
+}
+.sample{
+background-color:orange;
+}
+#sample_new{
+background-color:darkblue;
+}
+.sample_one{
+	font-weight:bold;
+	font-size:30px;
+}
+#Sample_three{
+	background-color:pink;
+}

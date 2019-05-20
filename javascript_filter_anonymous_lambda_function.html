@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+var a1=[2,5,6,8,-1,-4,34,56,78];
+/*var r=a1.filter(function(number){
+if(number>=0){
+return number;
+}
+});
+alert(r);*/
+
+//by using anonymous function
+/*var r=a1.filter((number)=>number>=0);
+alert(r);*/
+
+/*var r=a1.filter((number)=>number>=0);
+var x=r.map(number=>"<li>"+number+"</li>");
+console.log(x);*/
+
+//method chaining in javascript
+var r=a1.filter((number)=>number>=0).map(number=>"<li>"+number+"</li>");
+var joinr=r.join('');
+console.log(joinr);
+
+
+</script>
+</head>
+<body>
+</body>
+</html>

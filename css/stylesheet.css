@@ -1,0 +1,19 @@
+table,td{
+	border-top:1px solid black;
+border-collapse:collapse;
+}
+
+.register tr:nth-child(even)
+{
+	background-color:silver;
+}
+.register tr{
+	transition:0.6s;
+}
+
+.register tr:hover:nth-child(even){
+	background-color:yellow;
+}
+.register tr:hover:nth-child(odd){
+	background-color:red;
+}

@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+*{
+margin:0px auto;
+padding:0px;
+}
+.maincontainer{
+height:auto;
+width:1000px;
+background-color:#ccc;
+}
+.header{
+height:100px;
+background-color:orange;
+background:linear-gradient(180deg,orange,green,skyblue);
+}
+.menu{
+height:50px;
+background-color:yellow;
+}
+.content{
+height:auto;
+background-color:dark-blue;
+}
+.leftcontent{
+height:600px;
+width:200px;
+background-color:green;
+display:inline-block;
+float:left;
+}
+.rightcontent{
+height:600px;
+width:800px;
+background-color:orange;
+display:inline-block;
+float:right;
+background:radial-gradient(violet,indigo,white);
+<!--background:radial-gradient(violet,indigo,blue,green,yellow,orange,red,white);-->
+}
+.footer{
+clear:both;
+height:50px;
+background-color:yellow;
+}
+.imagecontainer{
+width:700px;
+height:250px;
+background-color:white;
+margin-top:20px;
+}
+.first,.second,.third{
+height:200px;
+width:200px;
+display:inline-block;
+margin-top:23px;
+border:2px solid white;
+box-shadow:2px 2px 5px red,-2px -2px 5px orange;
+}
+.first{
+float:left;
+margin-left:20px;
+}
+.second{
+float:left;
+margin-left:24px;
+}
+.third{
+float:right;
+margin-right:20px;
+}
+</style>
+<body>
+<div class="maincontainer">
+<div class="header">Header</div>
+<div class="menu">Menu</div>
+<div class="content">
+	  <div class="leftcontent">Left Content</div>
+	  <div class="rightcontent">Right Content
+   <div class="imagecontainer">
+		<div class="first"><img src="images/emp.jpg" width=200 height=200></div>
+		<div class="second"><img src="images/emp1.png" width=200 height=200></div>
+		<div class="third"><img src="images/emp2.jpg" width=200 height=200></div>
+  </div>
+  </div>
+</div>
+ <div class="footer">Footer</div>
+</div>
+</body>
+</html>

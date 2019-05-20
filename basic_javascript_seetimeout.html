@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic set time out properties</title>
+<script>
+var start;
+function startMethodExecution(){
+start=setTimeout(function(){
+document.getElementById('output').innerHTML="this is tapaswi"},3000);
+}
+function stopMethodBeforeExecution(){
+clearTimeout(start);
+}
+</script>
+
+</head>
+<body>
+<div id="output"></div>
+<button onClick="return startMethodExecution()";>Start Execution</button>
+<button onClick="return stopMethodBeforeExecution()";>Stop Execution</button>
+</body>
+</html>

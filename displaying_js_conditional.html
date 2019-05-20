@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registeration</title>
+<script>
+function compareValue()
+{
+var x=parseInt(document.getElementById('fvalue').value);
+var y=parseInt(document.getElementById('cvalue').value);
+if(x>y)
+{
+alert("X is highest");
+}
+else if(x==y)
+{
+alert("Both are equal");
+}
+else{
+alert("Y is highest");
+}
+}
+</script>
+</head>
+<body>
+X:<input type="text" id="fvalue"><br><br>
+Y:<input type="text" id="cvalue"><br><br>
+<button onClick="return compareValue();">Display</button>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic Transform</title>
+<meta charset="UTF-8">
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+body{
+margin:0px;
+padding:0px;
+background-image:url('images/emp1.png');
+background-size:cover;
+}
+.maincontainer{
+width:500px;
+height:300px;
+background-color:rgba(0,0,0,0.6);
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+box-shadow:2px 2px 5px red,-2px -2px 5px orange;
+
+}
+.maincontainer p{
+color:white;
+margin-top:20px;
+margin-right:20px;
+text-align:justify;
+}
+.circle{
+width:200px;
+height:200px;
+border-radius:50%;
+float:left;
+border:2px solid black;
+position:relative;
+margin-top:50px;
+margin-left:20px;
+margin-right:30px;
+shape-outside:circle();
+transition:0.6s;
+}
+.circle:hover{
+box-shadow:5px 5px 10px white;
+}
+.maincontainer img{
+border-radius:50%;
+position:absolute;
+}
+.circle .cover{
+width:0px;
+height:200px;
+border-radius:50%;
+position:absolute;
+left:0px;
+transition:0.6s;
+}
+.circle:hover .cover{
+width:200px;
+background-color:rgba(0,0,0,0.6);
+}
+.circle img{
+position:absolute;
+}
+</style>
+<body>
+<div class="maincontainer">
+<div class="circle">
+<img src="images/employee.jpg" width=200 height=200>
+<div class="cover"></div>
+
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

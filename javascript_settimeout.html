@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic set time out properties</title>
+<script>
+var startTimer=setInterval(starttimermethod,3000);
+function starttimermethod(){
+var dateobj=new Date();
+var localtime=dateobj.toLocaleTimeString();
+document.getElementById('output').innerHTML=localtime;
+}
+function stopTimer(){
+clearInterval(startTimer);
+}
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button onClick="return stopTimer()">Stop Timer</button>
+</body>
+</html>

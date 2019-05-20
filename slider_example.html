@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+.first{
+width:200px;
+height:200px;
+background-color:green;
+position:relative;
+
+}
+.second {
+width:0px;
+height:200px;
+position:absolute;
+background-color:red;
+transition:0.6s;
+left:0px;
+
+}
+.first:hover .second{
+width:200px;
+}
+
+</style>
+
+</head>
+<body>
+<div class="first"><div class="second"></div></div>
+
+</body>
+</html>

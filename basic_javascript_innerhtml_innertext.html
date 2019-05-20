@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function changeContent(){
+document.getElementById('output').innerHTML="i am a faculty";
+}
+function changeImage(){
+document.getElementById('output1').innerHTML="<img src='images/emp1.png' width=200 height=200>";
+}
+function changeText(){
+document.getElementById('output2').innerText="i am a faculty";
+}
+</script>
+</head>
+<body>
+<div id="output">Ramesh</div>
+<button onclick="return changeContent();">Change Content</button>
+<div id="output1"><img src="images/emp.jpg" width=200 height=200></div>
+<button onclick="return changeImage();">Change Image</button>
+<div id="output2"><img src="images/emp.jpg" width=200 height=200></div>
+<button onclick="return changeText();">Change Text</button>
+</body>
+</html>

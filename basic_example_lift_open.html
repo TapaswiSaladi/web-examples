@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+.container{
+width:200px;
+height:200px;
+position:relative;
+}
+.container img{
+position:absolute;
+}
+.doorone{
+width:100px;
+height:200px;
+background-color:orange;
+color:white;
+position:absolute;
+left:0px;
+transition:0.6s;
+}
+.doortwo{
+width:100px;
+height:200px;
+background-color:blue;
+color:white;
+position:absolute;
+right:0px;
+transition:0.6s;
+
+}
+.container:hover .doorone,.container:hover .doortwo
+{
+width:0px;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="container"><img src="images/emp.jpg" width=200 height=200>
+<div class="doorone"></div>
+<div class="doortwo"></div>
+</div>
+
+
+</body>
+</html>

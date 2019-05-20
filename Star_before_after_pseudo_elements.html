@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="css/stylesheet.css">
+<style>
+	
+.triangle{
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+	border-top: 100px solid red;
+	position:relative;
+	margin-top:150px;
+	}
+.triangle::before{
+	content:" ";
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 100px solid transparent;
+	border-bottom: 100px solid red;
+	position:absolute;
+	bottom:40px;
+	left:-100px;
+	
+}
+</style>
+</head>
+<body>
+<div class="triangle"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

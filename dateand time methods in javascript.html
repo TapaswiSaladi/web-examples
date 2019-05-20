@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayValue()
+{
+var dateobj=new Date();
+var day=dateobj.getDay();
+var month=dateobj.getMonth();
+var year=dateobj.getFullYear();
+var date=dateobj.toLocaleDateString();
+var hours=dateobj.getHours();
+var mins=dateobj.getMinutes();
+var sec=dateobj.getSeconds();
+var milli=dateobj.getMilliseconds();
+var time=dateobj.toLocaleTimeString();
+alert(hours);
+alert(day+"/"+month+"/"+year);
+
+document.getElementById('output').innerHTML =dateobj;
+}
+</script>
+</head>
+<body>
+<button onClick="return displayValue();">Display</button>
+<p id="output"></p>
+</body>
+</html>

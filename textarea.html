@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower" rel="stylesheet">
+
+<script>
+
+function text()
+{
+var msglength=document.getElementById('msg').value.length;
+var maxnumber=100;
+var remaincharacters=maxnumber-msglength;
+document.getElementById('output').innerHTML=remaincharacters;
+}
+</script>
+<style>
+#output{
+padding:20px 20px;
+background-color:green;
+border-radius:50%;
+border:5px dashed white;
+color:white;
+font-size:22px;
+font-weight:bold;
+font-family: 'Indie Flower', cursive;
+letter-spacing:2px;
+line-height:125px;
+}
+#msg{
+font-family: 'Dancing Script', cursive;
+font-size:22px;
+
+}
+</style>
+</head>
+<body>
+<textarea  rows=10 cols=50 maxlength=100 id="msg" onKeyUp="return text();"></textarea>
+<div><span id="output">100</span>Characters Remained</div>
+</body>
+</html>
+

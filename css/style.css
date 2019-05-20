@@ -1,0 +1,17 @@
+table,td{
+	border-top:1px solid black;
+border-collapse:collapse;
+}
+td{
+	
+height:135px;
+width:135px;
+}
+.firstrow td:nth-child(even)
+{
+	background-color:black;
+}
+.secondrow td:nth-child(odd)
+{
+	background-color:black;
+}
